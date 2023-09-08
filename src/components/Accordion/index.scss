@@ -1,0 +1,28 @@
+.accordion-item {
+  margin: 8px;
+  padding: 8px;
+  .accordion-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+  }
+  .label-text {
+    font-size: 14px;
+    line-height: 21px;
+    font-family: "Poppins";
+    font-weight: 500;
+  }
+  .dropdown-icon {
+    margin-right: 8px;
+    transition: transform 0.3s;
+  }
+  .dropdown-icon.open {
+    transform: rotate(180deg);
+  }
+
+  .accordion-content {
+    padding: 8px;
+  }
+}
