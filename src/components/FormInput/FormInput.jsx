@@ -9,7 +9,7 @@ const FormInput = ({ showIcon }) => {
 
   return (
     <div className="field-wrapper">
-    {showIcon?<img className="icon" src="check.svg" />: <img className="icon" src="pencil.svg" alt="logo"/>}
+    {showIcon?<img className="icon" src="check.svg" />: showIcon===false ?<img className="icon" src="pencil.svg" alt="logo"/>:null}
       <input
         className="input-field"
         type="text"
